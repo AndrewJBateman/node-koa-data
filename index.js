@@ -6,6 +6,7 @@ const bodyparser = require("koa-bodyparser");
 const path = require("path");
 
 const app = new koa();
+const port = 5000;
 
 app.use(json());
 app.use(bodyparser());
@@ -48,13 +49,11 @@ router.post("/addwell", addWell);
 
 async function addWell(ctx) {
   const body = ctx.request.body;
-  const well = body.well;
+  const well = body.well.toUpperCase();
   wells.push(well);
   ctx.redirect("/");
 }
 
-app.use(async (ctx) => (ctx.body = { msg: "test" }));
-
-app.listen(5000, () => {
-  console.log("app started");
+app.listen(port, () => {
+  console.log(`app started on port ${port}`);
 });
