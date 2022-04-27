@@ -1,6 +1,6 @@
 # :zap: Node Koa Data
 
-* Node.js + Koa used with embedded javascript (EJS) to display list of oil well data
+* Node.js + Koa used with embedded javascript (EJS) & Bootstrap to display oil well data
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/node-koa-data?style=plastic)
@@ -75,7 +75,7 @@ router.get("/", async (ctx) => {
 
 ## :clap: Inspiration
 
-* tba
+* [Oklahoma Oil Well Data](https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html)
 
 ## :file_folder: License
 
