@@ -1,6 +1,6 @@
 # :zap: Node Koa Data
 
-* Node.js + Koa used with embedded javascript (EJS) & Bootstrap to display oil well data
+* Node.js used with Koa instead of Express middleware, with embedded javascript (EJS) & Bootstrap to display oil well data
 * **Note:** to open web links in a new window use: _ctrl+click on link_
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/AndrewJBateman/node-koa-data?style=plastic)
@@ -38,7 +38,7 @@
 
 * [Node.js v16](https://nodejs.org/) Javascript runtime using the [Chrome V8 engine](https://v8.dev/)
 * [koa v2](https://www.npmjs.com/package/koa) HTTP middleware alternative to Express.js
-* [koa-ejs v4](https://www.npmjs.com/package/koa-ejs) embedded javascript
+* [koa-ejs v4](https://www.npmjs.com/package/koa-ejs) embedded Javascript
 * [Bootstrap v5](https://getbootstrap.com) responsive navbar and styling
 
 ## :floppy_disk: Setup
@@ -58,7 +58,7 @@
 ```javascript
 router.get("/", async (ctx) => {
   await ctx.render("index", {
-    title: "Underground Injection Control Wells ",
+    title: "Underground Injection Control Wells",
     wells: wells,
   });
 });
@@ -66,7 +66,7 @@ router.get("/", async (ctx) => {
 
 ## :cool: Features
 
-* Uses Koa instead of the usual Express middleware
+* Uses Koa which is much lighter than the usual Express middleware
 
 ## :clipboard: Status, Testing & To-Do List
 
@@ -76,6 +76,7 @@ router.get("/", async (ctx) => {
 ## :clap: Inspiration
 
 * [Oklahoma Oil Well Data](https://oklahoma.gov/occ/divisions/oil-gas/oil-gas-data.html)
+* [esparkinfo.com/blog: Express vs Koa: Which Node.js Framework Is Best For You?](https://www.esparkinfo.com/blog/express-vs-koa.html)
 
 ## :file_folder: License
 
