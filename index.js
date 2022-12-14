@@ -20,7 +20,7 @@ const wells = [
   "NORTH CARMEN RED FORK UNIT",
   "LESLIE",
   "MEANS 'C'",
-  "LSB MCCRADY"
+  "LSB MCCRADY",
 ];
 
 // set router middleware
